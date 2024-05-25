@@ -11,6 +11,9 @@ p {
   box-shadow: 1px 3px 5px gray;
   grid-column: 2;
   grid-row: 1;
+
+  display: grid;
+  grid-template: repeat(2, 50px) / 2fr 1fr;
 }
 
 .sidebar {
