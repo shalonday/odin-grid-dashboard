@@ -23,6 +23,9 @@ p {
   background-color: gray;
   grid-column: 2;
   grid-row: 2;
+
+  display: grid;
+  grid-template: 1fr / 3fr 1fr;
 }
 
 .projects-grid {
@@ -34,4 +37,9 @@ p {
 .main .projects .card {
   background-color: white;
   box-shadow: 1px 3px 5px gray;
+}
+
+.announcements-trending {
+  display: grid;
+  grid-template: repeat(2, 1fr) / 1fr;
 }
