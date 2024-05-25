@@ -51,6 +51,13 @@ p {
   grid-template: repeat(3, 80px) / 1fr;
 }
 
+.trending-grid {
+  padding: 20px;
+
+  display: grid;
+  grid-template: repeat(4, 60px) / 1fr;
+}
+
 .card {
   background-color: white;
   border-radius: 10px;
