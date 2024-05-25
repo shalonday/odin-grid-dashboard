@@ -1,3 +1,37 @@
+body {
+  display: grid;
+  grid-template: 100px 1fr / 200px 1fr;
+}
+
+p {
+  font-size: 10px;
+}
 .header {
-  color: blue;
+  background-color: white;
+  box-shadow: 1px 3px 5px gray;
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.sidebar {
+  background-color: turquoise;
+  grid-column: 1;
+  grid-row: 1/3;
+}
+
+.main {
+  background-color: gray;
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.main .projects .card {
+  background-color: white;
+  box-shadow: 1px 3px 5px gray;
 }
