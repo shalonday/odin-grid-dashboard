@@ -185,7 +185,11 @@ li {
 
 .announcements-grid {
   display: grid;
-  grid-template: repeat(3, 80px) / 1fr;
+  grid-template: repeat(3, auto) / 1fr;
+}
+
+.announcement-item h6, .announcement-item p{
+  margin: 0px;
 }
 
 .trending-grid {
