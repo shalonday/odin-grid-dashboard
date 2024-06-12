@@ -150,8 +150,16 @@ li {
 
 .projects-grid {
   display: grid;
-  grid-template: repeat(2, 1fr) / repeat(auto-fill, minmax(150px, 1fr));
+  grid-template: repeat(auto-fill, minmax(50px, 1fr)) / repeat(2, 1fr) ;
   gap: 20px;
+}
+
+.projects-grid h6{
+  margin: 5px 0px 0px 0px;
+}
+
+.projects-grid p{
+  margin: 0px;
 }
 
 .main .projects .card {
@@ -160,6 +168,21 @@ li {
   position: relative;
 
   border-radius: 10px;
+}
+
+.project-card{
+  overflow: hidden; /*so that the yellow strip is clipped inside the rounded borders of the div*/
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.project-buttons{
+  display: flex;
+  justify-content: end;
+  gap: 20px;
 }
 
 .card .strip{
@@ -181,6 +204,10 @@ li {
   border-radius: 10px;
 
   padding: 16px;
+}
+
+.card p{
+  color: gray;
 }
 
 .announcements-grid {
